@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26924" started-at="2016-07-06T06:00:12Z" finished-at="2016-07-06T06:00:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26924" started-at="2016-07-06T06:00:12Z" finished-at="2016-07-06T06:00:38Z">
+      <class name="com.test.action.TestClass">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.test.action.TestClass@1ff8b8f]" name="beforeClass" is-config="true" duration-ms="15370" started-at="2016-07-06T11:30:12Z" finished-at="2016-07-06T11:30:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Step01_Click_Sign_In()[pri:0, instance:com.test.action.TestClass@1ff8b8f]" name="Step01_Click_Sign_In" duration-ms="275" started-at="2016-07-06T11:30:27Z" finished-at="2016-07-06T11:30:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step01_Click_Sign_In -->
+        <test-method status="PASS" signature="Step02_Enter_Credentials()[pri:0, instance:com.test.action.TestClass@1ff8b8f]" name="Step02_Enter_Credentials" duration-ms="4150" started-at="2016-07-06T11:30:27Z" finished-at="2016-07-06T11:30:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step02_Enter_Credentials -->
+        <test-method status="PASS" signature="Step03_Create_Repository()[pri:0, instance:com.test.action.TestClass@1ff8b8f]" name="Step03_Create_Repository" duration-ms="7079" started-at="2016-07-06T11:30:31Z" finished-at="2016-07-06T11:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step03_Create_Repository -->
+        <test-method status="FAIL" signature="Step04_Run_Shell_Script()[pri:0, instance:com.test.action.TestClass@1ff8b8f]" name="Step04_Run_Shell_Script" duration-ms="9" started-at="2016-07-06T11:30:38Z" finished-at="2016-07-06T11:30:38Z">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.test.PageObject.UtilityClass.getConfigValue(UtilityClass.java:30)
+	at com.test.PageObject.ShellScript.execute(ShellScript.java:80)
+	at com.test.action.TestClass.Step04_Run_Shell_Script(TestClass.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step04_Run_Shell_Script -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.test.action.TestClass@1ff8b8f]" name="afterClass" is-config="true" duration-ms="1" started-at="2016-07-06T11:30:38Z" finished-at="2016-07-06T11:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.test.action.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
